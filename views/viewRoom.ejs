@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Room List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/styleCategory.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/styleCategory2.css">
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">UrHotel</h2>
+        <nav class="navigation">
+            <a href="/homeLogin">Home</a>
+            <a href="">About</a>
+            <a href="/categories">Types</a>
+            <a href="/rooms">Book</a>
+            <a href="">Contact</a>
+            <a href="/profiles">Profile</a>
+        </nav>
+    </header>
+
+    <section class="rooms sec-width" id="rooms">
+        <div class="title">
+            <h2>rooms</h2>
+        </div>
+        <span>Sort by:</span>
+        <a href="?status=status" class="logos">Highest Price |</a>
+        <a href="?status2=status2" class="logos">Lowest Price</a>
+        <div class="rooms-container">
+            <% dataRoom.forEach(el=> { %>
+            <article class="room">
+                <div class="room-image">
+                    <img src="<%= el.imgUrl %>">
+                </div>
+                <div class="room-text">
+                    <h3><%= el.mergeName %></h3>
+                    <ul>
+                        <li><i class="fas fa-arrow-alt-circle-right"></i><%= el.Category.name %></li>
+                        <li><i class="fas fa-arrow-alt-circle-right"></i><%= el.status %></li>
+                    </ul>
+                    <p class="rate"><span><%= idr(el.Category.price) %> /</span> Per Night</p>
+                    <a href="/rooms/<%= el.id %>/book"> <button>Book Now</button> </a>
+                </div>
+            </article>
+            <% }) %>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Standard Room",
+        "imageURL": "https://i.ibb.co/VjH0Ppw/img1.jpg",
+        "price": 1000000,
+        "description": "Standard Room is the lowest class of room and only has limited facilities, such as a bed, AC, TV, toiletries and drinking water. The mattress sizes provided by Standard Rooms usually vary. Some provide single bed, queen size, or even king size mattresses. What is clear is that the quality of a standard room in a 1 star hotel and a 5 star hotel is definitely very different. There's no need to ask about price. These rooms are generally priced cheaply so they are very suitable for those of you who are vacationing on a limited budget."
+    },
+    {
+        "name": "Deluxe Room",
+        "imageURL": "https://i.ibb.co/Q9mn74J/img2.jpg",
+        "price": 3000000,
+        "description": "If you want to get a type of hotel room that is more comfortable than a Standard Room, try looking for a hotel that provides Deluxe Rooms. Deluxe Room offers a larger room size than Standard Room. If the average Standard Room position is on the lowest floor of the hotel, the Deluxe Room is located on a higher floor. The facilities, services and equipment for staying in a Deluxe Room are almost the same as a Standard Room. It's just that in this type visitors will be given the option: do you choose a twin bed or a double bed? A twin bed is 2 single bed size mattresses, while a double bed is 1 queen size or king size mattress."
+    },
+    {
+        "name": "VIP Room",
+        "imageURL": "https://i.ibb.co/HB6RSp9/img3.jpg",
+        "price": 5000000,
+        "description": "Want a more luxurious staying experience? You can book a VIP Room. Different from the previous rooms, the VIP Room has a larger room size, which can reach 50 square meters for one room. Apart from that, there is also a small living room with comfortable seating or sofas so it is perfect for relaxing. Meanwhile, in the bathroom area, you are provided with a bathtub for soaking."
+    },
+    {
+        "name": "Luxury Room",
+        "imageURL": "https://i.ibb.co/Q9mn74J/img2.jpg",
+        "price": 10000000,
+        "description": "This is the most expensive type of hotel room ever. People know it as the Luxury Room. This room is usually located on the top floor of a hotel and has the best view. So, if you are a guest who prioritizes a comfortable stay, then choose this room type! The facilities provided are no joke, starting from a separate spacious living room, dining room, and more than one bedroom. The interior is made in such a way as to create an elegant and luxurious impression. In essence, you won't be able to find the comfort of staying in a Luxury Room in any other type of room."
+    }
+]

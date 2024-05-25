@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS User Profile Card</title>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/styleProfile.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/styleCategory2.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+
+<header>
+    <h2 class="logo">UrHotel</h2>
+    <nav class="navigation">
+        <a href="/homeLogin">Home</a>
+        <a href="">About</a>
+        <a href="/categories">Types</a>
+        <a href="/rooms">Book</a>
+        <a href="">Contact</a>
+        <a href="/profiles/<%= dataProfile.id %>">Profile</a>
+    </nav>
+</header>
+
+<% dataProfile.forEach(el => { %>
+    <div class="wrapper">
+        <div class="left">
+            <h4><%= el.fullName %></h4>
+        </div>
+        <div class="right">
+            <div class="info">
+                <h3>Information</h3>
+                <div class="info_data">
+                     <div class="data">
+                        <h4>Gender</h4>
+                        <p><%= el.gender %></p>
+                     </div>
+                     <div class="data">
+                       <h4>Date of Birth</h4>
+                        <p><%= el.formattedDate() %></p>
+                  </div>
+                </div>
+            </div>
+          
+          <div class="projects">
+                <div class="projects_data">
+                     <div class="data">
+                        <h4>NIK</h4>
+                        <p><%= el.nik %></p>
+                     </div>
+                     <div class="data">
+                       <h4>Address</h4>
+                        <p><%= el.address %></p>
+                  </div>
+                </div>
+            </div>
+          
+            <div class="social_media">
+                <ul>
+                  <li><a href="/profiles/<%= el.id %>/edit"><i>Edit</i></a></li>
+              </ul>
+          </div>
+        </div>
+    </div>
+<% }) %>
+
+</body>
+</html>

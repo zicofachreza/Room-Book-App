@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+    <title>Ur Hotel</title>
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">UrHotel</h2>
+        <nav class="navigation">
+            <a href="/">Home</a>
+            <a href="">About</a>
+            <a href="/categories">Types</a>
+            <a class="contact-link" href="">Contact</a>
+            <button class="btnLogin-popup">Login</button>
+        </nav>
+    </header>
+    
+    <div class="wrapper ">
+        <span class="icon-close">
+            <ion-icon name="close-outline"></ion-icon>
+        </span>
+
+        <div class="form-box login">
+            <h2>Login</h2>
+            <p style="color: white; text-align: center;background-color: red;"><%=error%></p>
+            <form action="/login" method="POST">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="text" name="username" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" name="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                </div>
+            </div>
+            </form>
+            
+
+            <div class="form-box register  " >
+                <h2 style="margin-bottom: 30px;">Registration</h2>
+                <p style="color: white; text-align: center;background-color: red;"><%=error%></p>
+                <form action="/register" class="row g-3" method="POST" >
+                    <div class="input-box col-md-6">
+                        <span class="icon"><ion-icon name="fullName"></ion-icon></span>
+                        <input type="text" name="fullName" required >
+                        <label>Full Name</label>
+                    </div>
+                    <div class="input-box col-md-6">
+                        <span class="icon"><ion-icon name="username"></ion-icon></span>
+                        <input type="text" name="username" required>
+                        <label>Username</label>
+                    </div>
+                   
+                    <div class="input-box col-md-6">
+                        <span class="icon"><ion-icon name="address"></ion-icon></span>
+                        <input type="text" name="address" required>
+                        <label>Address</label>
+                    </div>
+                    <div class="input-box col-md-6">
+                        <span class="icon"><ion-icon name="nik"></ion-icon></span>
+                        <input type="text" name="nik" required>
+                        <label>NIK</label>
+                    </div>
+                    <div class="input-box col-md-6">
+                        <span class="icon"><ion-icon name="email"></ion-icon></span>
+                        <input type="email" name="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box col-md-6">
+                        <span class="icon"><ion-icon name="password"></ion-icon></span>
+                        <input type="password" name="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="input-box date-of-birth">
+                                <span class="icon"><ion-icon name="dateOfBirth"></ion-icon></span>
+                                <label>Date of Birth</label>
+                                <input type="date" class="form-control" name="dateOfBirth" required>
+                                
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="gender" class="col-sm-2 col-form-label">gender</label>
+                            <div class="col-sm-10">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" id="inlineCheckbox2" value="Male" name="gender">
+                                    <label class="form-check-label" for="inlineCheckbox2">Male</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" id="inlineCheckbox3" value="Female" name="gender">
+                                    <label class="form-check-label" for="inlineCheckbox3">Female</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="remember-forgot col-md-12 " style="margin: 0%;">
+                        <label><input type="checkbox">I agree to the terms & conditions</label>
+                    </div>
+                    <button type="submit" class="btn btn-outline-dark mt-3" style="margin: 0%;">Register</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                </form>
+                
+                </div>
+            </div>
+    </div>
+
+    <script src="/scripts/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <%- include("_links.ejs") %>    
+</body>
+
+</html>

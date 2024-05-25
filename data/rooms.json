@@ -1,0 +1,58 @@
+[
+    {
+        "name": "1A",
+        "imgUrl": "https://i.ibb.co/VjH0Ppw/img1.jpg",
+        "CategoryId": 1,
+        "status": "Available",
+        "floor": 1
+    },
+    {
+        "name": "2A",
+        "imgUrl": "https://i.ibb.co/VjH0Ppw/img1.jpg",
+        "CategoryId": 1,
+        "status": "Available",
+        "floor": 1
+    },
+    {
+        "name": "1B",
+        "imgUrl": "https://i.ibb.co/Q9mn74J/img2.jpg",
+        "CategoryId": 2,
+        "status": "Available",
+        "floor": 2
+    },
+    {
+        "name": "2B",
+        "imgUrl": "https://i.ibb.co/Q9mn74J/img2.jpg",
+        "CategoryId": 2,
+        "status": "Available",
+        "floor": 2
+    },
+    {
+        "name": "1C",
+        "imgUrl": "https://i.ibb.co/HB6RSp9/img3.jpg",
+        "CategoryId": 3,
+        "status": "Available",
+        "floor": 3
+    },
+    {
+        "name": "2C",
+        "imgUrl": "https://i.ibb.co/HB6RSp9/img3.jpg",
+        "CategoryId": 3,
+        "status": "Available",
+        "floor": 3
+    },
+    {
+        "name": "1D",
+        "imgUrl": "https://i.ibb.co/Q9mn74J/img2.jpg",
+        "CategoryId": 4,
+        "status": "Available",
+        "floor": 4
+    },
+    {
+        "name": "2D",
+        "imgUrl": "https://i.ibb.co/Q9mn74J/img2.jpg",
+        "CategoryId": 4,
+        "status": "Available",
+        "floor": 4
+    }
+]

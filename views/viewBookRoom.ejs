@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Booking Form</title>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/styleBookRoom.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/styleCategory2.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo">UrHotel</h2>
+        <nav class="navigation">
+            <a href="/homeLogin">Home</a>
+            <a href="">About</a>
+            <a href="/categories">Types</a>
+            <a href="/rooms">Book</a>
+            <a href="">Contact</a>
+            <a href="/profiles">Profile</a>
+        </nav>
+    </header>
+
+    <div class="background">
+        <div class="booking-form">
+            <h2>Booking Room Form</h2>
+            <form action="/rooms/<%= dataRoom.id %>/book" method="POST">
+                <% errors.forEach(el => { %>
+                    <h6 style="color: red; font-size: 15px; text-align: center;"><%= el %></h6>
+                <% }) %>
+                <label for="ordererName">Name:</label>
+                <input type="text" name="ordererName" id="ordererName">
+ 
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+               
+           
+                <label for="checkIn">Check In:</label>
+                <input type="date" name="checkIn" id="checkIn">
+                
+               
+                <label for="checkOut">Check Out:</label>
+                <input type="date" name="checkOut" id="checkOut">
+               
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </div>
+    <script src="/scripts/script2.js"></script>
+</body>
+</html>

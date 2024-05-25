@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Room Types</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/styleCategory.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/styleCategory2.css">
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">UrHotel</h2>
+        <nav class="navigation">
+            <a href="/homeLogin">Home</a>
+            <a href="">About</a>
+            <a href="/categories">Types</a>
+            <a href="/rooms">Book</a>
+            <a href="">Contact</a>
+            <a href="/profiles">Profile</a>
+        </nav>
+    </header>
+
+    <section class="rooms sec-width" id="rooms">
+        <div class="title">
+            <h2>room types</h2>
+        </div>
+        <div class="rooms-container">
+            <% dataCategory.forEach(el=> { %>
+            <article class="room">
+                <div class="room-image">
+                    <img src="<%= el.imageURL %>">
+                </div>
+                <div class="room-text">
+                    <h3><%= el.name %></h3>
+                    <ul>
+                        <li><i class="fas fa-arrow-alt-circle-right"></i>Comfort.</li>
+                        <li><i class="fas fa-arrow-alt-circle-right"></i>Save.</li>
+                        <li><i class="fas fa-arrow-alt-circle-right"></i>Recommended.</li>
+                    </ul>
+                    <p><%= el.description %></p>
+                    <p class="rate"><span><%= idr(el.price) %> /</span> Per Night</p>
+                </div>
+            </article>
+            <% }) %>
+        </div>
+    </section>
+</body>
+
+</html>
